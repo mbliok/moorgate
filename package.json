@@ -1,0 +1,26 @@
+{
+  "name": "moorgate",
+  "version": "1.0.0",
+  "description": "Moorgate site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbliok/moorgate.git"
+  },
+  "author": "Maia Bliok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbliok/moorgate/issues"
+  },
+  "homepage": "https://github.com/mbliok/moorgate#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
