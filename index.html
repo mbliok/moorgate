@@ -241,8 +241,65 @@
                 </p>
               </div>
             </div>
-            <div class="col-md gradient">
-              form
+            <div class="col-md gradient text-white">
+              <form action="">
+                <div class="col-half">
+                  <label for="fname">
+                    <input
+                      type="text"
+                      id="fname"
+                      name="firstname"
+                      placeholder="Name*"
+                    />
+                  </label>
+
+                  <label for="lname" class="error">
+                    <input
+                      class="error"
+                      type="text"
+                      id="lname"
+                      name="lastname"
+                      placeholder="Surname*"
+                    />
+                    <span class="error-mess"
+                      >The subject field is required.</span
+                    >
+                  </label>
+                </div>
+                <div class="col-half">
+                  <label for="email" class="error">
+                    <input
+                      type="mail"
+                      id="email"
+                      name="email"
+                      placeholder="Email*"
+                    />
+                    <span class="error-mess"
+                      >The subject field is required.</span
+                    >
+                  </label>
+
+                  <label for="subject">
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="Subject*"
+                    />
+                  </label>
+                </div>
+                <div class="col-full">
+                  <label for="message">
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Message*"
+                    ></textarea>
+                  </label>
+                  <small class="pull-left">*Mandatory field</small>
+                  <input type="submit" value="Send" class="pull-right" />
+                </div>
+              </form>
             </div>
           </div>
         </section>

@@ -185,6 +185,12 @@
       max-width: 440px;
     }
   }
+  & .col-half {
+    max-width: 400px;
+    &:nth-child(2) {
+      margin-left: 65px;
+    }
+  }
 }
 // common
 .flex {
@@ -203,6 +209,14 @@
 }
 .col-lg {
   flex: 67%;
+}
+.col-half {
+  width: 50%;
+  float: left;
+}
+.col-full {
+  width: 100%;
+  max-width: 865px;
 }
 .text-container {
   padding: 105px;
@@ -282,4 +296,61 @@
       margin-bottom: 4px;
     }
   }
+}
+// form
+/* Style inputs */
+form {
+  padding: 80px 65px;
+}
+input[type='text'],
+input[type='mail'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid $gray;
+  background-color: transparent;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  &.error {
+    border-bottom-color: $red;
+  }
+}
+span.error-mess {
+  display: none;
+}
+label {
+  &.error {
+    span.error-mess {
+      display: block;
+      color: #a6a6a6;
+      position: relative;
+      margin-top: -16px;
+      line-height: 22px;
+      padding-left: 28px;
+
+      &:before {
+        content: '!';
+        left: 0;
+        background-color: $red;
+        color: $white;
+        padding: 0px 8px;
+        position: absolute;
+      }
+    }
+  }
+}
+input[type='submit'] {
+  background-color: transparent;
+  color: white;
+  padding: 12px 20px;
+  width: 170px;
+  border: 1px solid $white;
+  cursor: pointer;
+  font-size: 18px;
+}
+input[type='submit']:hover {
+  background-color: $blue;
 }
