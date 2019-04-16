@@ -1,0 +1,285 @@
+//==========================
+//       HOME SECTION
+//==========================
+#intro {
+  img {
+    margin: 30px 0 14px 0;
+  }
+  h3 {
+    margin-bottom: 0;
+  }
+  & .col-sm {
+    position: relative;
+    &:before {
+      content: '';
+      height: 1px;
+      width: calc(100% - 105px);
+      background-color: $gray;
+      position: absolute;
+      bottom: 0;
+      left: 105px;
+    }
+  }
+}
+//==========================
+//      OUR INDUSTRIES
+//==========================
+#industry {
+  & .flex-p {
+    padding: 80px 75px;
+  }
+  & .flex-item:first-child {
+    & .card-title {
+      font-size: 24px;
+      margin-top: 62px;
+    }
+  }
+  .col-text {
+    width: 60%;
+    position: absolute;
+    height: 100%;
+    font-size: 22px;
+    line-height: 28px;
+    p {
+      margin-bottom: 30px;
+    }
+  }
+  .col-img {
+    width: 42%;
+
+    img {
+      margin-top: 20px;
+      position: absolute;
+      height: 100%;
+      right: 0;
+    }
+  }
+}
+
+//==========================
+//      module gradient
+//==========================
+.module {
+  position: relative;
+  min-height: 600px;
+}
+.gradient {
+  position: relative;
+  z-index: 2;
+  background: rgb(43, 59, 115);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(43, 59, 115, 1) 0%,
+    rgba(166, 51, 137, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(43, 59, 115, 1) 0%,
+    rgba(166, 51, 137, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(43, 59, 115, 1) 0%,
+    rgba(166, 51, 137, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b3b73', endColorstr='#a63389',GradientType=1 );
+}
+//==========================
+//     Products
+//==========================
+#products {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+      color: $black;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+      border-top: 1px solid #d3d3d3;
+      padding: 19px 0;
+      &:last-child {
+        border-bottom: 1px solid #d3d3d3;
+      }
+    }
+  }
+}
+.box-text {
+  padding: 80px 55px;
+  background-color: $white;
+  float: left;
+  width: 450px;
+  min-height: 680px;
+  margin-top: 20px;
+  box-shadow: -12px 19px 20px -15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+  & .box-before {
+    position: absolute;
+    background-color: transparent;
+    width: 240px;
+    height: 240px;
+    top: -20px;
+    left: -20px;
+    border-top: 20px solid $blue;
+    border-left: 20px solid $blue;
+  }
+}
+.box-images {
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  width: 720px;
+  div {
+    height: 240px;
+    width: 240px;
+    font-size: 20px;
+    overflow: hidden;
+    position: relative;
+    p {
+      padding: 20px;
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+    }
+    img {
+      width: 240px;
+    }
+    &:nth-child(1),
+    &:nth-child(4),
+    &:nth-child(7) {
+      background-color: $purple;
+      color: $white;
+    }
+    &:nth-child(2),
+    &:nth-child(5),
+    &:nth-child(8) {
+      background-color: $blue;
+      color: $white;
+    }
+    &:nth-child(3),
+    &:nth-child(6),
+    &:nth-child(9) {
+      background-color: #f0f0f0;
+      color: $black;
+    }
+  }
+}
+
+//==========================
+//     GET IN TOUCH
+//==========================
+#contacts {
+  > div {
+    align-content: stretch;
+  }
+  & .col-sm {
+    background-color: $gray;
+    display: flex;
+    min-height: 530px;
+    justify-content: center;
+    align-items: center;
+    & .inner {
+      max-width: 440px;
+    }
+  }
+}
+// common
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-xs {
+  flex: 33%;
+}
+
+.col-sm {
+  flex: 40%;
+}
+.col-md {
+  flex: 60%;
+}
+.col-lg {
+  flex: 67%;
+}
+.text-container {
+  padding: 105px;
+}
+.center-container {
+  margin: 130px auto;
+  width: 1170px;
+}
+.section-title {
+  color: $text;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  &:after {
+    content: '';
+    background: $purple;
+    width: 30px;
+    height: 2px;
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+.sub-title {
+  color: $black;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.card-title {
+  color: $text-d;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.font-22 {
+  font-size: 32px;
+}
+.font-20 {
+  font-size: 20px;
+  line-height: 26px;
+}
+.font-32 {
+  font-size: 32px;
+  line-height: normal;
+}
+.text-white {
+  color: $white;
+}
+.section-footer {
+  background-color: $purple;
+  & .col-lg {
+    background-color: white;
+    padding: 20px 105px;
+  }
+}
+
+.divider {
+  background-color: #f5f5f5;
+  height: 60px;
+  width: 100%;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  align-items: stretch;
+  & .flex-item {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0 30px;
+    color: #3e3e3e;
+    img {
+      max-height: 75px;
+      margin-bottom: 4px;
+    }
+  }
+}

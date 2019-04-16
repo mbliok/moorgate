@@ -1,0 +1,71 @@
+.topbar {
+  position: relative;
+}
+
+#nav {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background: rgb(43, 59, 115);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(43, 59, 115, 1) 0%,
+    rgba(166, 51, 137, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(43, 59, 115, 1) 0%,
+    rgba(166, 51, 137, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(43, 59, 115, 1) 0%,
+    rgba(166, 51, 137, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b3b73', endColorstr='#a63389',GradientType=1 );
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 236px 0 100px 0;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    li {
+      margin: 0;
+      padding: 32px 0;
+      text-align: center;
+      color: $gray-l;
+      font-size: 40px;
+      a {
+        color: $gray-l;
+      }
+    }
+  }
+}
+#show-menu-btn {
+  width: 65px;
+  height: 65px;
+  background: $purple;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px 0 0 13px;
+  cursor: pointer;
+  z-index: 2;
+  span {
+    background: $white;
+    height: 3px;
+    width: 36px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    display: block;
+    display: block;
+    &:nth-child(2) {
+      margin-left: 10px;
+    }
+  }
+}

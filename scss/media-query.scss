@@ -1,0 +1,85 @@
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media screen and (max-width: 320px) {
+      @content;
+    }
+  } @else if $class == mobile-sm {
+    @media screen and (max-width: 480px) {
+      @content;
+    }
+  } @else if $class == mobile {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $class == tablet-p {
+    @media screen and (max-width: 800px) {
+      @content;
+    }
+  } @else if $class == tablet-l {
+    @media screen and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $class == md {
+    @media screen and (max-width: 1366px),
+      screen and (max-width: 1280px),
+      screen and (max-width: 1366px) {
+      @content;
+    }
+  } @else if $class == lg {
+    @media screen and (max-width: 1280px) {
+      @content;
+    }
+  } @else if $class == mh970 {
+    @media screen and (max-height: 970px) {
+      @content;
+    }
+  } @else if $class == mh750 {
+    @media screen and (max-height: 750px) {
+      @content;
+    }
+  } @else if $class == mh600 {
+    @media screen and (max-height: 600px) {
+      @content;
+    }
+  }
+}
+
+.mq {
+  position: fixed;
+  z-index: 99999;
+  top: 160px;
+  left: 20px;
+  display: block;
+  background: violet;
+  @include breakpoint(lg) {
+    background: #f1f1f1;
+  }
+  @include breakpoint(md) {
+    background: orange;
+  }
+  @include breakpoint(tablet-l) {
+    background: green;
+  }
+  @include breakpoint(tablet-p) {
+    background: gray;
+  }
+
+  @include breakpoint(mobile) {
+    background: red;
+  }
+  @include breakpoint(mobile-sm) {
+    background: black;
+  }
+  @include breakpoint(xs) {
+    background: yellow;
+  }
+  // @include breakpoint(mh970) {
+  //   background: olive;
+  // }
+  // @include breakpoint(mh750) {
+  //   background: rgb(78, 247, 238);
+  // }
+  // @include breakpoint(mh600) {
+  //   background: rgb(26, 226, 103);
+  // }
+}
