@@ -54,7 +54,7 @@
           </div>
           <div class="col-lg">Slider</div>
         </section>
-        <footer class="cfix font-20 section-footer">
+        <footer class="cfix font-20 section-footer flex">
           <div class="col-lg">
             <strong> Reach out </strong>if you are interested in paving the
             steps for your <strong>business</strong>
@@ -243,14 +243,16 @@
             </div>
             <div class="col-md gradient text-white">
               <form action="">
-                <div class="col-half">
-                  <label for="fname">
+                  <div class="col-full font-24"><h4>Contact US</h4></div>
+                <div class="col-half firts">
+                  <label for="fname" class="">
                     <input
                       type="text"
                       id="fname"
                       name="firstname"
                       placeholder="Name*"
                     />
+                    <span class="error-mess"></span>
                   </label>
 
                   <label for="lname" class="error">
@@ -274,37 +276,75 @@
                       name="email"
                       placeholder="Email*"
                     />
-                    <span class="error-mess"
-                      >The subject field is required.</span
-                    >
+                    <span class="error-mess">The subject field is required.</span>
                   </label>
 
-                  <label for="subject">
+                  <label for="subject" class="">
                     <input
                       type="text"
                       id="subject"
                       name="subject"
                       placeholder="Subject*"
                     />
+                    <span class="error-mess"></span>
                   </label>
                 </div>
                 <div class="col-full">
-                  <label for="message">
+                  <label for="message" class="">
                     <textarea
                       id="message"
                       name="message"
                       placeholder="Message*"
                     ></textarea>
+                    <span class="error-mess"></span>
                   </label>
-                  <small class="pull-left">*Mandatory field</small>
+                  <i class="pull-left">* Mandatory field</i>
                   <input type="submit" value="Send" class="pull-right" />
                 </div>
               </form>
             </div>
           </div>
         </section>
+        <footer class="main-footer">
+            <div class="flex cfix">
+                <div class="col-sm">
+                    <div class="inner"> <img src="assets/img/Morcode-logo.svg" alt="Moorgode Logo" /></div>
+                </div>
+                <div class="col-md">
+                  <div class="contact-addr">
+                    <strong class="font-18">Our Office</strong>
+                  <p>Nezabravka 25 Str.</br>
+                      Park Hotel Moskva</br>
+                      Sofia 1133, Bulgaria
+                    </p>
+                    <a href="">Privacy Policy</a></br>
+                    <a href="">Cookie Policy</a>
+                  </div>
+                  <div class="contact-info">
+                    <p><img src="assets/img/phone-icon.svg" alt="icon-phone" /> +359 XXX XXX XXX</p>
+                    <p><img src="assets/img/pin-icon.svg" alt="icon-pin" />View on Google Maps</p>
+                  </div>
+                </div>
+            </div>
+            <nav class="nav-footer">
+              <span>2019. All rights reserved.</span>
+                <ul class="flex">
+                  <li class="active">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#industry">What we do</a>
+                  </li>
+                  <li>
+                    <a href="#products">Who we are</a>
+                  </li>
+                  <li>
+                    <a href="#contacts">Get in touch</a>
+                  </li>
+                </ul>
+        </footer>
       </main>
-      <a id="scrool-to-tbn">scroll to top</a>
+      <a id="scrool-to-tbn"><span>Top</span></a>
     </div>
     <script src="js/jquery-2.1.4.min.js"></script>
 

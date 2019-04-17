@@ -1,25 +1,41 @@
 // button scrool to top
 #scrool-to-tbn {
   display: none;
-  background-color: #ff9800;
-  width: 50px;
-  height: 50px;
+  background-color: $purple;
+  color: white;
+  width: 65px;
+  height: 200px;
   text-align: center;
-  border-radius: 4px;
-  margin: 30px;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color 0.3s;
+  bottom: 112px;
+  right: -1px;
+  border: solid 1px #979797;
+  transition: background-color 1s;
   z-index: 1000;
+  &:before{
+    content:'';
+    height: 40px;
+    width: 2px;
+    top: 30px;
+    left: 30px;
+    background-color: $white;
+    position: absolute;
+  }
   &.show {
     display: inline-block;
   }
   &:hover {
     cursor: pointer;
-    background-color: #333;
+    background-color: $blue;
   }
   &:active {
-    background-color: red;
+    background-color: $blue;
+  }
+   span{
+    transform: rotate(-90deg);
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 23px;
   }
 }

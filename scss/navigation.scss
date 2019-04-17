@@ -1,6 +1,7 @@
-.topbar {
-  position: relative;
-}
+//==========================
+//     TOP NAVIGATION
+//==========================
+
 
 #nav {
   display: none;
@@ -66,6 +67,57 @@
     display: block;
     &:nth-child(2) {
       margin-left: 10px;
+    }
+  }
+}
+.topbar {
+  position: relative;
+  &.is-open{
+    #show-menu-btn{
+      background-color: transparent;
+      z-index:102;
+      span:nth-child(1){
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 28px;
+      }
+      span:nth-child(2){
+        transform: rotate(45deg);
+        position: absolute;
+        top: 28px;
+        right: 13px;
+      }
+      span:nth-child(3){
+        display: none;
+      }
+
+    }
+  }
+}
+//==========================
+//     FOOTER NAVIGATION
+//==========================
+.nav-footer{
+  width: 100%;
+  background-color: $blue;
+  position: relative;
+    span{
+      color:$white;
+      position: absolute;
+      top:30px;
+      left:65px;
+    }
+  ul{
+    margin:0;
+    padding:0 65px;
+    justify-content: flex-end;
+    li{
+      list-style-type: none;
+      margin: 10px 26px;
+      padding: 16px 10px;
+      a{
+        color: $white;
+      }
     }
   }
 }
